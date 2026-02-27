@@ -1,0 +1,35 @@
+version: 3
+
+project:
+  locator: SolaceProducts_pubsubplus-connector-spark
+  id: SolaceProducts_pubsubplus-connector-spark
+  name: pubsubplus-connector-spark
+  teams: []
+  labels:
+    - MI
+    - repository
+    - techcoe
+
+vendoredDependencies:
+  forceRescans: false
+  scanMethod: CLILicenseScan
+  licenseScanPathFilters:
+    exclude:
+      - "./.git"
+      - "./.github"
+      - "./target"
+      - "./src/test"
+      - "./samples"
+      - "./src/docs"
+
+paths:
+  exclude:
+    - ./.git
+    - ./.github
+    - ./target
+    - ./src/test
+    - ./samples
+    - ./src/docs
+
+telemetry:
+  scope: full

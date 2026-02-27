@@ -1,0 +1,25 @@
+{
+  "sca_scanning": {
+    "enabled": true,
+    "fossa": {
+      "policy": {
+        "mode": "REPORT",
+        "block_on": ["policy_conflict", "unlicensed_dependency"]
+      },
+      "vulnerability": {
+        "mode": "REPORT",
+        "block_on": ["critical", "high"]
+      },
+      "project_id": "SolaceProducts_pubsubplus-connector-spark",
+      "team": null,
+      "labels": [""]
+    }
+  },
+  "build": {
+    "squad": "connectors-coe",
+    "service_name": "pubsubplus-connector-spark",
+    "java_environment": "zulu",
+    "jre_version": "17",
+    "runner_label": "ubuntu-22.04"
+  }
+}
